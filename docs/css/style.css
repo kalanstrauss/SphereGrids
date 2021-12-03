@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    /*border: 2px solid red;*/
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+main {
+    margin: 50px 0;
+}
+
+p{
+    margin-bottom: 1em; 
+}
+
+#sketch {
+    position: fixed;
+    flex-wrap: wrap;
+    justify-content: right;
+    z-index: -1;
+}
+
+/* #sketch2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 0;
+} */
+
+#site-title{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#site-title a {
+    text-decoration: none;
+    transition-duration: 2s;
+}
+
+#site-title a:visited {
+    color: black;
+}
+
+#site-title a:hover {
+    transform: scale(1.3);
+    transition-property: transform;
+    transition-duration: .5s;
+}
+    
+#main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 5px 0;
+}
+
+#main-menu a {
+    margin: 0 2vw;
+    text-decoration: none;
+    transition-duration: 2s;
+}
+
+#main-menu a:hover {
+    transform: scale(1.2);
+    transition-property: transform;
+    transition-duration: .5s;
+}
+
+#grid {
+    position: relative;
+    justify-content: right;
+    width: 50%;
+    z-index: -1;
+}
+#sub-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 140px 0;
+}
+
+#sub-menu a {
+    margin: 0 3vw;
+    text-decoration: none;
+    transition-duration: 2s;
+}
+
+#sub-menu a:hover {
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .5s;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:75%;
+    
+
+}
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:75%;
+    text-align: center;
+
+}
+
+
+.gallery {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-item {
+    position: relative;
+    margin: 20px;
+    width: 40vw;
+    height: 40vw;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: .5s;
+
+}
+
+.overlay {
+
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition-duration: .5s;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pictures {
+    
+    display: block;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 35%;
+    
+    
+    
+    transition-duration: 2s;
+}
+
+.pictures:hover {
+    transform: scale(1.5);
+    transition-property: transform;
+    transition-duration: .5s;
+    z-index: +1;
+}
+
+.pictures2 {
+    
+    display: block;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 45%;
+
+}
+
+.videos {
+    display: block;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 35%;
+}
+
+.videostwo {
+    transform: scale(3.15);
+    position: relative;
+    display: block;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 14%;
+   
+}
+
+.videos3 {
+    display: block;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 45%;
+}
+
+.smallpicture {
+    display: block;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+
+
+.green {
+    color: green;
+}
+
+.red {
+    color:red;
+}
+
+.blue {
+    color: blue;
+}
+
+.black {
+    color: black;
+}
+
+.cyan {
+    color: cyan;
+}
+
+.magenta {
+    color: magenta;
+}
+
+.yellow{
+    color: yellow;
+}
+
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 1112px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  { 
+
+    .overlay {
+
+        position: static;
+        color: black;
+        background-color: unset;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: max-content;
+        top: 0;
+        left: 0;
+        bottom: 50;
+        right: 0;
+        transition-duration: .5s;
+    }
+
+    .pictures:hover {
+        transform: scale(2.25);
+        transition-property: transform;
+        transition-duration: .5s;
+        z-index: +1;
+    }
+
+    .pictures2 {
+    
+        display: block;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 50%;
+    
+    }
+
+    .videos3 {
+        display: block;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 50%;
+    }
+
+
+}
