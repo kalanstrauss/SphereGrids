@@ -1,6 +1,7 @@
 let sphereGrid;
 let sphereTexture;
 let canvas;
+let canvasScalar = 0.1
 // let button;
 
 function preload() {
@@ -13,14 +14,14 @@ function preload() {
 }
 
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight, WEBGL);
-  canvas.position(windowWidth/2.3,windowHeight/-2.6)
+  canvas = createCanvas(innerWidth*canvasScalar, innerWidth*canvasScalar, WEBGL);
+  // canvas.position(0,0)
   canvas.parent("#sketch");
 
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+    resizeCanvas(innerWidth*canvasScalar,innerWidth*canvasScalar);
     background(255);
 }
 function draw() {
@@ -30,7 +31,7 @@ function draw() {
   //orbitControl();
   rotateX(mouseY/-100);
   rotateY(mouseX/-100);
-  scale(6);
+  scale(4);
   model(sphereGrid);
   texture(sphereTexture);
 

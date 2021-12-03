@@ -17,10 +17,11 @@ p{
 }
 
 #sketch {
+    display: block;
     position: fixed;
-    flex-wrap: wrap;
-    justify-content: right;
-    z-index: -1;
+    top: 0;
+    right: 0;
+    
 }
 
 /* #sketch2 {
@@ -293,6 +294,19 @@ p{
   and (max-device-width: 1112px) 
   and (-webkit-min-device-pixel-ratio: 2)
   { 
+
+    #main-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        padding: 5px 0;
+    }
+    
+    #main-menu a {
+        margin: 0 1vw;
+        text-decoration: none;
+        transition-duration: 2s;
+    }
 
     .overlay {
 
