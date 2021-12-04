@@ -1,3 +1,7 @@
+
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -21,8 +25,10 @@ p{
     position: fixed;
     top: 0;
     right: 0;
-    padding: 10px
-    
+
+    /* DOUG: I decided to use margins instead of padding. Padding made it
+    so that there was blank space around the sphere that was clickable */
+    margin: 10px;
 }
 
 /* #sketch2 {
@@ -258,7 +264,7 @@ p{
     width: 50%;
 }
 
-#product-component-1638579928205  {
+#product-component-1638582856439  {
     display: block;
     display: flex;
     margin-left: auto;
@@ -267,7 +273,6 @@ p{
     margin-bottom: 10px;
     width: 50%;
 }
-
 
 
 
@@ -307,22 +312,28 @@ p{
   and (-webkit-min-device-pixel-ratio: 2)
   { 
     #sketch {
-        display: block;
-        position: relative;
-        top: 0;
-       
-        
+      /* DOUG: Fixed this up down here so that the sketch properly jumps to center of the screen */
+        position: fixed;
+        left: 50%;
+        top: 0; /* increase this if you want the canvas to move down the page */
+        right: unset;
+        transform: translateX(-50%);
+        margin: 10px 0;
     }
 
     #main-menu {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 1px 0;
+
+        /* DOUG: I added a gap here for your menu text (gap is something you can use with flex) 
+        I also added the margin-top there so the menu would go below the canvas */
+        gap: calc(12px + 2vw);
+        margin-top: 80px;
     }
     
     #main-menu a {
-        margin: 0 2vw;
+        /* DOUG: deleted the margin you had here. Let gap up above in #main-menu handle this spacing */
         text-decoration: none;
         transition-duration: 2s;
     }

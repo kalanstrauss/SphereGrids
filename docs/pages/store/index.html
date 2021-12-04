@@ -8,6 +8,7 @@
    
    
     <script src="../../libs/p5.min.js"></script>
+    <body style="background-color:#0d0d0d;"></body>
     <title>Sphere Grids</title>
 
     
@@ -22,9 +23,9 @@
 
             
 
-            <a class="black" href=".">STORE</a>
-                <a class="black" href="../whatisthis/">WHAT IS THIS?</a>
-                <a class="black" href="../contact/">CONTACT</a>
+            <a class="green" href=".">STORE</a>
+                <a class="green" href="../whatisthis/">WHAT IS THIS?</a>
+                <a class="green" href="../contact/">CONTACT</a>
 
                 
             
@@ -37,7 +38,7 @@
 
     <main>
         
-        <div id='product-component-1638579928205'></div>
+        <!-- <div id='product-component-1638579928205'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -352,8 +353,335 @@
   }
 })();
 /*]]>*/
+</script> -->
+
+<div id='product-component-1638582856439'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'thelatentspace.myshopify.com',
+      storefrontAccessToken: '6fc5f392f6411aebfb66ac7b3334b867',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '7077441372350',
+        node: document.getElementById('product-component-1638582856439'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "title": {
+        "font-family": "Orbitron, sans-serif",
+        "font-weight": "normal",
+        "font-size": "19px",
+        "color": "#1eff00"
+      },
+      "button": {
+        "font-family": "Orbitron, sans-serif",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000",
+          "background-color": "#1be600"
+        },
+        "background-color": "#1eff00",
+        ":focus": {
+          "background-color": "#1be600"
+        },
+        "border-radius": "2px",
+        "padding-left": "24px",
+        "padding-right": "24px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      },
+      "price": {
+        "font-family": "Orbitron, sans-serif",
+        "font-size": "16px",
+        "color": "#1eff00"
+      },
+      "compareAt": {
+        "font-family": "Orbitron, sans-serif",
+        "font-size": "13.6px",
+        "color": "#1eff00"
+      },
+      "unitPrice": {
+        "font-family": "Orbitron, sans-serif",
+        "font-size": "13.6px",
+        "color": "#1eff00"
+      }
+    },
+    "buttonDestination": "modal",
+    "contents": {
+      "options": false
+    },
+    "width": "380px",
+    "text": {
+      "button": "View Piece"
+    },
+    "googleFonts": [
+      "Orbitron"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Orbitron, sans-serif",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000",
+          "background-color": "#1be600"
+        },
+        "background-color": "#1eff00",
+        ":focus": {
+          "background-color": "#1be600"
+        },
+        "border-radius": "2px",
+        "padding-left": "24px",
+        "padding-right": "24px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      },
+      "title": {
+        "font-family": "Orbitron, sans-serif",
+        "font-weight": "normal",
+        "font-size": "22px",
+        "color": "#4c4c4c"
+      },
+      "price": {
+        "font-family": "Orbitron, sans-serif",
+        "font-weight": "normal",
+        "font-size": "18px",
+        "color": "#4c4c4c"
+      },
+      "compareAt": {
+        "font-family": "Orbitron, sans-serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#4c4c4c"
+      },
+      "unitPrice": {
+        "font-family": "Orbitron, sans-serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#4c4c4c"
+      },
+      "description": {
+        "font-family": "Orbitron, sans-serif"
+      }
+    },
+    "googleFonts": [
+      "Orbitron"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Orbitron, sans-serif",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000",
+          "background-color": "#1be600"
+        },
+        "background-color": "#1eff00",
+        ":focus": {
+          "background-color": "#1be600"
+        },
+        "border-radius": "2px"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "empty": {
+        "color": "#000000"
+      },
+      "noteDescription": {
+        "color": "#000000"
+      },
+      "discountText": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "discountAmount": {
+        "color": "#000000"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "notice": "🌐 FREE DOMESTIC SHIPPING! 🌐",
+      "button": "Checkout"
+    },
+    "contents": {
+      "note": true
+    },
+    "googleFonts": [
+      "Orbitron"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Orbitron, sans-serif",
+        "background-color": "#1eff00",
+        ":hover": {
+          "background-color": "#1be600"
+        },
+        ":focus": {
+          "background-color": "#1be600"
+        }
+      },
+      "count": {
+        "font-size": "14px",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "iconPath": {
+        "fill": "#000000"
+      }
+    },
+    "googleFonts": [
+      "Orbitron"
+    ]
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "fullPrice": {
+        "color": "#000000"
+      },
+      "discount": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
 </script>
         
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&display=swap');
+    </style>
 
 
 
