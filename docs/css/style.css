@@ -294,12 +294,19 @@ p{
   and (max-device-width: 1112px) 
   and (-webkit-min-device-pixel-ratio: 2)
   { 
+    #sketch {
+        display: block;
+        position: fixed;
+        top: center;
+        right: center;
+        
+    }
 
     #main-menu {
         display: flex;
         flex-wrap: wrap;
         justify-content: left;
-        padding: 5px 0;
+        padding: 1px 0;
     }
     
     #main-menu a {
