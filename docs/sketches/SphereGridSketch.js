@@ -32,13 +32,13 @@ function setup() {
 function windowResized() {
     let newSize = getCanvasSize();
     resizeCanvas(newSize, newSize);
-    background(255,0);
+    background(0);
 }
 
 function draw() {
   stroke(0);
   strokeWeight(0);
-  background(255,0);
+  background(0);
   //orbitControl();
   rotateX(mouseY/-100);
   rotateY(mouseX/-100);

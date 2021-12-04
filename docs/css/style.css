@@ -114,6 +114,7 @@ p{
     margin-top: 20px;
     margin-bottom: 20px;
     width:75%;
+    line-height: 2 ;
     
 
 }
@@ -274,19 +275,15 @@ p{
     width: 50%;
 }
 
-#Homeimage {
+.center {
     display: block;
-    display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1px;
-    margin-bottom: 10px;
     width: 50%;
-
-    /* DOUG: I decided to use margins instead of padding. Padding made it
-    so that there was blank space around the sphere that was clickable */
-    /* margin: 10px; */
-}
+    transform: translateY(-10%) scale(.5);
+    ;
+    
+  }
 
 
 
