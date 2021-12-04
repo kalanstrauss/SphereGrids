@@ -21,7 +21,7 @@ function setup() {
 }
 
 function windowResized() {
-    resizeCanvas(innerWidth*canvasScalar+100,innerWidth*canvasScalar+100);
+    resizeCanvas(innerWidth*canvasScalar,innerWidth*canvasScalar);
     background(255);
 }
 function draw() {
