@@ -297,9 +297,9 @@ p{
   { 
     #sketch {
         display: block;
-        position: fixed;
+        position: relative;
         top: center;
-        right: center;
+       
         
     }
 
