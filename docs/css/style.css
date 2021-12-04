@@ -305,7 +305,7 @@ p{
     #main-menu {
         display: flex;
         flex-wrap: wrap;
-        justify-content: left;
+        justify-content: center;
         padding: 1px 0;
     }
     
