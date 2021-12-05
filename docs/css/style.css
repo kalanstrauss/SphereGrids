@@ -338,7 +338,7 @@ p{
       /* DOUG: Fixed this up down here so that the sketch properly jumps to center of the screen */
         position: fixed;
         left: 50%;
-        top: 0; /* increase this if you want the canvas to move down the page */
+        bottom: 0; /* increase this if you want the canvas to move down the page */
         right: unset;
         transform: translateX(-50%);
         margin: 10px 0;
