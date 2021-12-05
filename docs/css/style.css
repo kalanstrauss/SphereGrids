@@ -353,6 +353,16 @@ p{
         
     }
 
+    .burger-nav{
+        display: block;
+        height: 40px;
+        width: 100%
+        background: url(../images/Menu.png) no-repeat 2% center;
+        background-color: black;
+        cursor: pointer;
+    
+      }
+
     #main-menu {
         display: flex;
         flex-wrap: wrap;
@@ -371,15 +381,7 @@ p{
         transition-duration: 2s;
     }
 
-    .burger-nav{
-        display: block;
-        height: 40px;
-        width: 100%
-        background: url(../images/Menu.png) no-repeat 2% center;
-        background-color: transparent;
-        cursor: pointer;
     
-      }
 
     .overlay {
 
