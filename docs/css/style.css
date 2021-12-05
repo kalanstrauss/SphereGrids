@@ -282,7 +282,7 @@ p{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    transform: translateY(-10%) scale(1);
+    transform: translateY(5%) scale(1);
     z-index: 1040;
     ;
     
