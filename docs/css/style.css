@@ -29,6 +29,7 @@ p{
     /* DOUG: I decided to use margins instead of padding. Padding made it
     so that there was blank space around the sphere that was clickable */
     margin: 10px;
+    z-index: 1040;
 }
 
 /* #sketch2 {
@@ -62,8 +63,12 @@ p{
 #main-menu {
     display: flex;
     flex-wrap: wrap;
+    position: fixed;
     justify-content: left;
     padding: 5px 0;
+    
+       top: 10px;
+       z-index: 1030;
 }
 
 #main-menu a {
@@ -280,11 +285,18 @@ p{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    transform: translateY(-10%) scale(.5);
+    transform: translateY(-10%) scale(1);
+    z-index: -1;
     ;
     
   }
 
+  hr {
+    height: 1px;
+    color: lime;
+    background-color: lime;
+    border: none;
+}
 
 
 .green {
