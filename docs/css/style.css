@@ -286,7 +286,7 @@ p{
     margin-right: auto;
     width: 50%;
     transform: translateY(-10%) scale(1);
-    z-index: -1;
+    z-index: 1040;
     ;
     
   }
