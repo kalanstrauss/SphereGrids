@@ -327,6 +327,12 @@ p{
     color: yellow;
 }
 
+.rainbow-lr {
+    background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+   
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
 
 /* Portrait */
 @media only screen 
