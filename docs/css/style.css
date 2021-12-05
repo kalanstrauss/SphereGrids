@@ -346,14 +346,14 @@ p{
       /* DOUG: Fixed this up down here so that the sketch properly jumps to center of the screen */
         position: fixed;
         left: 50%;
-        bottom: 0; /* increase this if you want the canvas to move down the page */
+        top: 0; /* increase this if you want the canvas to move down the page */
         right: unset;
         transform: translateX(-50%);
         margin: 10px 0;
         
     }
 
-    .burger-nav{
+    /* .burger-nav{
         display: block;
         height: 40px;
         width: 100%
@@ -361,27 +361,51 @@ p{
         background-color: black;
         cursor: pointer;
     
-      }
+      } */
 
     #main-menu {
         display: flex;
         flex-wrap: wrap;
-        
+        position: relative;
         justify-content: center;
-
+        
         /* DOUG: I added a gap here for your menu text (gap is something you can use with flex) 
         I also added the margin-top there so the menu would go below the canvas */
-        gap: calc(12px + 2vw);
+         gap: calc(12px + 2vw);
         margin-top: 80px;
-    }
+    } 
     
     #main-menu a {
         /* DOUG: deleted the margin you had here. Let gap up above in #main-menu handle this spacing */
-        text-decoration: none;
+         text-decoration: none;
         transition-duration: 2s;
+    }  
+
+    #contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width:75%;
+        text-align: center;
+    
     }
 
-    
+    #center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        transform: translateY(50%) scale(2);
+        z-index: 1040;
+        ;
+        
+      }
 
     .overlay {
 
