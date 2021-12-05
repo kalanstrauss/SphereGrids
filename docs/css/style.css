@@ -116,10 +116,10 @@ p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width:75%;
-    line-height: 2 ;
+    text-align: center;
     
 
 }
@@ -128,14 +128,11 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5px 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
     width:75%;
-    text-align: center;
+    text-align: left;
 
 }
 
@@ -390,9 +387,9 @@ p{
         margin-left: auto;
         margin-right: auto;
         margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         width:75%;
-        text-align: center;
+        text-align: left;
     
     }
 
