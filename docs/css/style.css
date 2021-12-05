@@ -348,7 +348,7 @@ p{
     #main-menu {
         display: flex;
         flex-wrap: wrap;
-        
+        position: absolute;
         justify-content: center;
 
         /* DOUG: I added a gap here for your menu text (gap is something you can use with flex) 
